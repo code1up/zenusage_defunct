@@ -4,26 +4,21 @@ runtime: python
 api_version: 1
 
 handlers:
+- url: /index.html
+  static_files: root/index.html
+  upload: root/index.html
+
+- url: /favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+
 - url: /app
   static_dir: app
 
-- url: /styles
-  static_dir: styles
-
-- url: /images
-  static_dir: images
-
-- url: /lib
-  static_dir: lib
-
-- url: /demo
-  static_dir: demo
-
 - url: /webservices.*
   script: webservices/services.py
-  # secure: always
+  # secure: always?
 
 - url: /protorpc.*
   script: webservices/services.py
   # secure: always?
-
