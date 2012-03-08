@@ -8,8 +8,8 @@ Ext.define("App.view.phone.Container", {
 
         items: [
             {
-                xtype: "navigationview",
-                id: "navigationView"
+                xtype: "navigator",
+                id: "navigator"
             }
         ]
     }
