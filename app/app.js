@@ -1,5 +1,5 @@
 Ext.application({
-    name: "ZenUsage",
+    name: "App",
 
     profiles: [
         "Phone",

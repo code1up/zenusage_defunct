@@ -1,4 +1,4 @@
-Ext.define("ZenUsage.model.Account", {
+Ext.define("App.model.Account", {
     extend: "Ext.data.Model",
 
     config: {

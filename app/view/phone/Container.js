@@ -1,4 +1,4 @@
-Ext.define("ZenUsage.view.phone.MainView", {
+Ext.define("App.view.phone.Container", {
     extend: "Ext.Container",
     xtype: "mainview",
 
@@ -8,7 +8,8 @@ Ext.define("ZenUsage.view.phone.MainView", {
 
         items: [
             {
-                xtype: "navigationview"
+                xtype: "navigationview",
+                id: "navigationView"
             }
         ]
     }

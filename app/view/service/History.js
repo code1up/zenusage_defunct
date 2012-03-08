@@ -1,6 +1,6 @@
-Ext.define("ZenUsage.view.ServiceHistoryView", {
+Ext.define("App.view.service.History", {
     extend: "Ext.Panel",
-    xtype: "servicehistoryview",
+    xtype: "servicehistory",
 
     config: {
         title: "History",

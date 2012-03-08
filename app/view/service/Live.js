@@ -1,18 +1,18 @@
-Ext.define("ZenUsage.view.ServiceAboutView", {
+Ext.define("App.view.service.Live", {
     extend: "Ext.Panel",
-    xtype: "serviceaboutview",
+    xtype: "servicelive",
 
     config: {
-        title: "About",
+        title: "Live",
         iconCls: "star",
-        html: "About",
+        html: "Live",
         styleHtmlContent: true,
 
         items: [
             {
                 xtype: "toolbar",
                 docked: "top",
-                title: "About"
+                title: "Live"
             }
         ]
     }

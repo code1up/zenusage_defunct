@@ -1,22 +1,22 @@
-Ext.define("ZenUsage.profile.Phone", {
+Ext.define("App.profile.Phone", {
     extend: "Ext.app.Profile",
 
     config: {
         views: [
-            "MainView"
+            "App.view.phone.Container"
         ],
 
         controllers: [
-            "Controller"
+            "Phone"
         ]
     },
 
     isActive: function() {
-        return Ext.os.is.Phone;
+        return !Ext.os.is.Phone;
     },
 
     launch: function() {
         console.log("profile.Phone::launch");
-        Ext.create("ZenUsage.view.phone.MainView");
+        Ext.create("App.view.phone.Controller");
     }
 });

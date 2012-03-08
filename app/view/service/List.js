@@ -1,6 +1,6 @@
-Ext.define("ZenUsage.view.ServiceListView", {
+Ext.define("App.view.service.List", {
     extend: "Ext.List",
-    xtype: "servicelistview",
+    xtype: "servicelist",
 
     config: {
         title: "Services",

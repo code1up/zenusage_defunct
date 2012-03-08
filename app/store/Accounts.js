@@ -1,8 +1,8 @@
-Ext.define("ZenUsage.store.Accounts", {
+Ext.define("App.store.Accounts", {
     extend: "Ext.data.Store",
 
     config: {
-        model: "ZenUsage.model.Account",
+        model: "App.model.Account",
         sorters: "userName",
 
         data: [

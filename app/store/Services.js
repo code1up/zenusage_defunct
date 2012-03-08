@@ -1,8 +1,8 @@
-Ext.define("ZenUsage.store.Services", {
+Ext.define("App.store.Services", {
     extend: "Ext.data.Store",
 
     config: {
-        model: "ZenUsage.model.Service",
+        model: "App.model.Service",
         sorters: "alias",
 
         data: [

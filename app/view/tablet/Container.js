@@ -1,4 +1,4 @@
-Ext.define("ZenUsage.view.tablet.MainView", {
+Ext.define("App.view.tablet.Container", {
     extend: "Ext.Container",
     xtype: "mainview",
 
@@ -8,7 +8,8 @@ Ext.define("ZenUsage.view.tablet.MainView", {
 
         items: [
             {
-                xtype: "navigationview",
+                xtype: "navigator",
+                id: "navigator",
                 flex: 1
             },
             {
@@ -17,8 +18,9 @@ Ext.define("ZenUsage.view.tablet.MainView", {
                 style: "background-color: #000000"
             },
             {
-                xtype: "servicetabview",
-                flex: 3
+                xtype: "servicecontainer",
+                id: "serviceContainer",
+                flex: 2
             }
         ]
     }

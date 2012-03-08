@@ -1,20 +1,21 @@
-Ext.define("ZenUsage.profile.Tablet", {
+Ext.define("App.profile.Tablet", {
     extend: "Ext.app.Profile",
 
     config: {
         views: [
-            "ZenUsage.view.AccountListView",
-            "ZenUsage.view.NavigationView",
-            "ZenUsage.view.ServiceAboutView",
-            "ZenUsage.view.ServiceHistoryView",
-            "ZenUsage.view.ServiceListView",
-            "ZenUsage.view.ServiceLiveView",
-            "ZenUsage.view.ServiceTabView",
-            "ZenUsage.view.tablet.MainView"
+            "App.view.tablet.Container",
+            "App.view.Navigator",
+            "App.view.account.List",
+            "App.view.service.List",
+            "App.view.service.Container",
+            "App.view.service.About",
+            "App.view.service.History",
+            "App.view.service.Live"
         ],
 
         controllers: [
-            "Controller"
+            "Tablet",
+            "Navigator"
         ]
     },
 
@@ -24,7 +25,6 @@ Ext.define("ZenUsage.profile.Tablet", {
     },
 
     launch: function() {
-        console.log("profile.Tablet::launch");
-        Ext.create("ZenUsage.view.tablet.MainView");
+        Ext.create("App.view.tablet.Container");
     }
 });

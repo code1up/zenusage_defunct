@@ -1,6 +1,6 @@
-Ext.define("ZenUsage.view.ServiceTabView", {
+Ext.define("App.view.service.Container", {
     extend: "Ext.TabPanel",
-    xtype: "servicetabview",
+    xtype: "servicecontainer",
 
     config: {
         title: "Xxx",
@@ -21,13 +21,13 @@ Ext.define("ZenUsage.view.ServiceTabView", {
 
         items: [
             {
-                xtype: "serviceaboutview"
+                xtype: "serviceabout"
             },
             {
-                xtype: "serviceliveview"
+                xtype: "servicelive"
             },
             {
-                xtype: "servicehistoryview"
+                xtype: "servicehistory"
             }
         ]
     }
