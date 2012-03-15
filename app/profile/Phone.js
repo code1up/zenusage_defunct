@@ -7,16 +7,17 @@ Ext.define("App.profile.Phone", {
         ],
 
         controllers: [
-            "Phone"
+            "Phone",
+            "Navigator"
         ]
     },
 
     isActive: function() {
-        return !Ext.os.is.Phone;
+        return Ext.os.is.Phone;
     },
 
     launch: function() {
         console.log("profile.Phone::launch");
-        Ext.create("App.view.phone.Controller");
+        Ext.create("App.view.phone.Container");
     }
 });

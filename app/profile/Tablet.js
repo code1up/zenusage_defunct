@@ -9,8 +9,9 @@ Ext.define("App.profile.Tablet", {
             "App.view.service.List",
             "App.view.service.Container",
             "App.view.service.About",
+            "App.view.service.Live",
             "App.view.service.History",
-            "App.view.service.Live"
+            "App.view.service.Charts"
         ],
 
         controllers: [

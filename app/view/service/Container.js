@@ -28,6 +28,9 @@ Ext.define("App.view.service.Container", {
             },
             {
                 xtype: "servicehistory"
+            },
+            {
+                xtype: "servicecharts"
             }
         ]
     }

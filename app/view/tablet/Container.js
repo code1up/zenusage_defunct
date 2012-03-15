@@ -9,7 +9,6 @@ Ext.define("App.view.tablet.Container", {
         items: [
             {
                 xtype: "navigator",
-                id: "navigator",
                 flex: 1
             },
             {

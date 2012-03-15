@@ -1,15 +1,18 @@
 Ext.define("App.view.phone.Container", {
     extend: "Ext.Container",
-    xtype: "mainview",
+    xtype: "phonecontainer",
 
     config: {
 		fullscreen: true,
-        layout: "fit",
+        layout: "card",
 
         items: [
             {
-                xtype: "navigator",
-                id: "navigator"
+                xtype: "navigator"
+            },
+            {
+                xtype: "servicecontainer",
+                id: "servicecontainer"
             }
         ]
     }

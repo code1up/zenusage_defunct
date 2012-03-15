@@ -31,7 +31,7 @@
 
     var titleBar = Ext.create("Ext.TitleBar", {
         xtype: "titlebar",
-        id: "toolbar",
+        id: "titlebar",
         docked: "top",
         title: "Accounts",
 

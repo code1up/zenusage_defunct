@@ -1,19 +1,35 @@
-Ext.define("App.view.service.About", {
-    extend: "Ext.Panel",
-    xtype: "serviceabout",
+(function() {
+    var backButton = Ext.create("Ext.Button", {
+        id: "backButton",
+        ui: "back",
+        text: "Back",
+        align: "left",
+        hidden: true
+    });
 
-    config: {
-        title: "About",
-        iconCls: "star",
-        html: "About",
-        styleHtmlContent: true,
+    Ext.define("App.view.service.About", {
+        extend: "Ext.Panel",
+        xtype: "serviceabout",
 
-        items: [
-            {
-                xtype: "toolbar",
-                docked: "top",
-                title: "About"
-            }
-        ]
-    }
-});
+        config: {
+            title: "About",
+            iconCls: "star",
+            html: "About",
+            styleHtmlContent: true,
+
+            items: [
+                {
+                    xtype: "titlebar",
+                    docked: "top",
+                    title: "About",
+
+                    items: [
+                        backButton
+                    ]
+                }
+            ]
+        }
+
+        // TODO: HERE
+    });
+})();
