@@ -1,6 +1,6 @@
 Ext.define("App.view.tablet.Container", {
     extend: "Ext.Container",
-    xtype: "mainview",
+    xtype: "tabletcontainer",
 
     config: {
 		fullscreen: true,

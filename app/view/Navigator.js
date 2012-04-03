@@ -33,7 +33,7 @@
         xtype: "titlebar",
         id: "titlebar",
         docked: "top",
-        title: "Accounts",
+        title: "A Idiot",
 
         items: [
             backButton,

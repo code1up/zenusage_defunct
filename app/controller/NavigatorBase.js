@@ -1,3 +1,7 @@
+// 300 500 5000 txtx; 20.50
+// 
+
+
 Ext.define("App.controller.NavigatorBase", {
     extend: "Ext.app.Controller",
 
@@ -23,6 +27,12 @@ Ext.define("App.controller.NavigatorBase", {
         },
 
         control: {
+            addButton: {
+                tap: function() {
+                    console.log("App::controller::Navigator::addButton::tap");
+                }
+            },
+
             editButton: {
                 tap: function() {
                     console.log("App::controller::Navigator::editButton::tap");
@@ -107,35 +117,6 @@ Ext.define("App.controller.NavigatorBase", {
         if (navigator.getActiveItem() !== index) {
             navigator.setActiveItem(index);
         }
-    },
-
-    showAccountMenu: function(target) {
-        var menu = Ext.create("Ext.Panel", {
-            layout: {
-                type: "vbox"
-            },
-            floating: true,
-            modal: true,
-            width: 256,
-            scroll: false,
-
-            items: [
-                {
-                    xtype: "button",
-                    ui: "decline",
-                    text: "Delete",
-                    style: "margin: 2px;"
-                },
-                {
-                    xtype: "button",
-                    // ui: "action",
-                    text: "Set Credentials",
-                    style: "margin: 2px;"
-                }
-            ]
-        });
-
-        menu.showBy(target);
     },
 
     launch: function() {
